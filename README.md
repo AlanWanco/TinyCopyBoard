@@ -1,4 +1,6 @@
 # TinyCopyBoard
+![Window](https://github.com/AlanWanco/TinyCopyBoard/blob/main/Snipaste_2024-01-26_21-34-47.png)
+
 一个迷你剪贴板实时显示悬浮窗，默认置顶，双击程序缩小到托盘，右键托盘菜单可以还原窗口或者退出。
 * 如果剪贴板内是文字，显示文字。（如果显示文字，双击程序边缘可以缩小）
 * 如果剪贴板内是图片，显示以窗口为高度等比缩放后的图片
