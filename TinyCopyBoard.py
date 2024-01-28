@@ -75,7 +75,6 @@ class MainWindow(QWidget):
         self.text_edit.setReadOnly(True)
         self.text_edit.setPlaceholderText("剪贴板中的文本将显示在这里")
         self.text_edit.viewport().setCursor(Qt.IBeamCursor)
-        self.text_edit.setFocusPolicy(Qt.NoFocus)
 
         self.label = QLabel(self.widget)
         self.label.setMaximumHeight(150)
