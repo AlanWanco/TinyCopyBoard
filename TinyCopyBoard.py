@@ -86,7 +86,7 @@ class MainWindow(QWidget):
                 color: #f5f5f5; 
                 background-color:rgba(18, 20, 20, 0.9);
                 padding: 17px 10px 10px 10px;
-                border: 1px solid #0078d4;
+                border: 1px solid #44536c;
                 border-radius: 5px;
             }
 """)
