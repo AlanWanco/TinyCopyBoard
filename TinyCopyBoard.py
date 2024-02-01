@@ -19,7 +19,7 @@ class MainWindow(QWidget):
 
         # Set window's title.
         self.setAttribute(Qt.WA_TranslucentBackground)  # Set main window to transparent
-        self.setWindowFlags(QtCore.Qt.WindowStaysOnTopHint | QtCore.Qt.FramelessWindowHint)
+        self.setWindowFlags(Qt.Tool | QtCore.Qt.WindowStaysOnTopHint | QtCore.Qt.FramelessWindowHint)
         self.setWindowTitle("TinyCopyBoard")
 
         self.widget = QWidget(self)
