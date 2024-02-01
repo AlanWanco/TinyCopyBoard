@@ -37,7 +37,7 @@ class MainWindow(QWidget):
                 font-family:'Microsoft YaHei';
                 background-color:rgba(18, 20, 20, 0.9);
                 padding: 17px 10px 10px 10px;
-                border: 1px solid #1e2228;
+                border: 1px solid #44536c;
                 border-radius: 5px;
             }
             QMenu {
@@ -61,7 +61,7 @@ class MainWindow(QWidget):
             }
             QScrollBar::handle:vertical {
                 background-color: #707070;
-                min-height: 20px;
+                min-height: 10px;
             }
             QScrollBar::add-line:vertical, QScrollBar::sub-line:vertical {
                 border: none;
@@ -86,7 +86,7 @@ class MainWindow(QWidget):
                 color: #f5f5f5; 
                 background-color:rgba(18, 20, 20, 0.9);
                 padding: 17px 10px 10px 10px;
-                border: 1px solid #1e2228;
+                border: 1px solid #0078d4;
                 border-radius: 5px;
             }
 """)
@@ -95,13 +95,10 @@ class MainWindow(QWidget):
         shadow.setBlurRadius(10)
         shadow.setColor(QColor(0, 0, 0, 80))
         shadow.setOffset(3, 3)
-        self.widget.setGraphicsEffect(shadow)
-        self.label.setGraphicsEffect(shadow)
+        self.setGraphicsEffect(shadow)
 
-        # Initialize variables for dragging the window
         self.drag_start_position = None
 
-        # Create system tray icon
         self.tray_icon = QSystemTrayIcon(QIcon("tmp.ico"), self)
         self.tray_icon.setToolTip("TinyCopyBoard")
         self.tray_icon.activated.connect(self.handle_tray_icon_activated)
